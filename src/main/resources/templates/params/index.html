@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaft.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar parámetros del Request HTTP GET - URL</title>
+</head>
+<body>
+    <h1>Enviar parámetros del Request HTTP GET - URL</h1>
+    <ul>
+        <li><a th:href="@{/params/string(texto='Hola Primitivo')}">/params/string?texto=Hola Primitvo</a></li>
+        <li><a th:href="@{/params/string(texto='Que tal Chemere')}">/params/string?texto=Que tal Chemere</a></li>
+        <li><a th:href="@{/params/mix-params(saludo='Hola Eliky', numero=98)}">/params/string?saludo=Hola Eliky&numero=98</a></li>
+        <li><a th:href="@{/params/mix-params2(saludo='Hola Ada', numero=36)}">/params/string?saludo=Hola Ada&numero=36</a></li>
+    </ul>
+</body>
+</html>
